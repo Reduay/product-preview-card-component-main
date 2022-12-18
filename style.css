@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap');
+
+
+:root{
+    --very-dark-blue: hsl(212, 21%, 14%);
+--dark-grayish-blue: hsl(228, 12%, 48%);
+--white: hsl(0, 0%, 100%);
+--dark-cyan: hsl(158, 36%, 37%);
+--cream: hsl(30, 38%, 92%);
+--ff--accent: 'Fraunces', serif;
+--ff-base: 'Montserrat', sans-serif;
+
+
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    color: var(--dark-grayish-blue);
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /* general styling*/
+  body{
+    line-height: 1.7;
+    background-color: var(--cream);
+    font-family: "outfit", sans-serif;
+    font-size: 0.875rem;
+    display: grid;
+    place-content: center;
+    margin: 1rem;
+}
+/*utilites*/
+.felx-group{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.product{
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    --content-padding: 1.5rem;
+    --content-spacing:0.5rem;
+display: grid;
+max-width: 600px;
+  
+}
+@media (min-width:600px){
+.product{
+  --content-padding:2rem;
+  grid-template-columns: 1fr 1fr;
+}
+}  
+
+
+.product_content{
+    padding: var(--content-padding);
+    display: grid;
+  gap: var(--content-spacing); 
+}
+.product_catagory{
+  font-size: 0.825rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  }
+  .product_title{
+    font-size: 2rem;
+    font-family: var(--ff--accent);
+    color: var(--very-dark-blue);
+  }
+  h1{
+    line-height: 1.1;
+  }
+  .product_price{
+    font-size: 2rem;
+    font-family: var(--ff--accent);
+    color: var(--dark-cyan);
+
+  }
+  .button{
+    cursor: pointer;
+    padding: 0.75em 1.5em;
+    border: 0;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+  font-size: 0.925rem;
+  border-radius: 0.5rem;
+  flex-flow: row wrap;
+  gap: 0.75rem;
+  
+  }
+  .button:is(:hover, :focus){
+    background-color: var(--dark-cyan);
+    
+  }
+
+
+
+
+
+
+
